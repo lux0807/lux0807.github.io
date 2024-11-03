@@ -1,0 +1,638 @@
+/* General Styles */
+
+@import url('https://fonts.cdnfonts.com/css/do-futuristic');
+
+.attention {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DO Futuristic', sans-serif;
+    color: white;
+    letter-spacing: 4px;
+}
+
+body {
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1498116069452-debf99cb30f0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBuaWdodCUyMHNreXxlbnwwfHwwfHx8MA%3D%3D'); /* Starry background */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.509);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #845EC2;
+    font-family: 'DO Futuristic', sans-serif;
+    letter-spacing: 6px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#subtitle{
+    color: #845EC2;
+    font-size: .59rem;
+    padding-bottom: 0.6rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #845EC2;
+}
+
+/* Main Section */
+#mainl:not(.exeption) {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+
+}
+
+#mainr:not(.exeption) {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+
+}
+
+#mainc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.intro h2 {
+    font-size: 2.2rem;
+    color: #50478b;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #0026a3;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(81, 55, 194);
+}
+
+section {
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+  
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2), 0 0 15px #0033ff;
+    background-color: #000000c0;
+    height: fit-content;
+}
+
+.technical p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.technical h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.experience p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.mission p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.team p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.509);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #bbb;
+    line-height: 1.6rem;
+}
+
+footer ul li img{
+    height: 4rem;
+}
+
+.socialitems{
+    display: flex;
+    justify-content: center;
+}
+
+.socialitems li{
+    margin: .8rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+
+    nav ul li{
+        margin-left: .5%;
+        margin-left: .5%;
+    }
+
+    /* .attention elem elrejtése és középre igazítása, ha szükséges */
+    .attention {
+        display: none; /* Az attention elem alapértelmezésben rejtett */
+        color: rgb(213, 28, 28);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 5rem;
+    }
+
+    /* Minden főbb elem középre igazítása */
+    main, header, footer, section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #mainl, #mainr{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;   /* Adjunk egy kis belső margót a jobb láthatóságért */
+    }
+
+    #mainl{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    #mainr{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .step:hover{
+        height: 8.8rem;
+    }
+
+    .exeption .sechead {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Középre igazítás */
+    }
+    
+
+    .norbi{
+        width: 90% !important;
+        height: fit-content !important;
+    }
+
+    .exeption .norbi img {
+        height: 10rem !important;
+        display: block !important;
+        margin: 1rem;
+    }
+    
+    .norbi p{
+        width: 88%;
+        display: flex;
+        text-align: center;
+        margin-left: none;
+
+    }
+    
+    .exeption .norbi h2 {
+        font-size: 2.5rem;
+        color: #0579af;
+        display: block !important;
+        width: 90%;
+        margin: none;
+    }
+
+}
+
+
+  
+
+/*----------------------lastyear.html---------------------------*/
+
+#mainc p{
+    max-width: 50rem;
+}
+
+.mechanical p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.mechanical h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.mechanical img{
+    opacity: 0;
+    height: 10rem;
+    margin: .1rem;
+    transition: all .3s ease;
+}
+
+.mechanical:hover img{
+    opacity: 1;
+}
+
+.software p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.software h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.software img{
+    opacity: 0;
+    height: 13rem;
+    margin: .8rem;
+    transition: all .3s ease;
+}
+
+.software:hover img{
+    opacity: 1;
+}
+
+.secmission p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.secmission h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.secmission li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.secmission ul{
+    line-height: 1.7rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
+
+.secmission:hover ul{
+    opacity: 1;
+}
+
+.teamwork p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.teamwork h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.teamwork img{
+    opacity: 0;
+    height: 12rem;
+    margin: .1rem;
+    transition: all .3s ease;
+}
+
+.teamwork:hover img{
+    opacity: 1;
+}
+
+.trips p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.trips h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.trips img{
+    opacity: 0;
+    height: 12rem;
+    margin: .1rem;
+    transition: all .3s ease;
+}
+
+.trips:hover img{
+    opacity: 1;
+}
+
+.tests p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+}
+
+.tests h2 {
+    font-size: 2.5rem;
+    color: #0579af; /* Cosmic blue */
+}
+
+.tests img{
+    opacity: 0;
+    height: 12rem;
+    margin: .1rem;
+    transition: all .3s ease;
+}
+
+.tests:hover img{
+    opacity: 1;
+}
+
+/*---------------------------------------------WORKSTATE-------------------------------------*/
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+#green{
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2), 0 0 15px #05cc30;
+}
+
+  .step {
+    height: 6rem;
+    width: 25rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2), 0 0 15px #0033ff;
+    background-color: #000000c0;
+    transition: all .4s ease;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .dolisttitle {
+    max-width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2.1rem;
+    color: rgb(0, 198, 162);
+    transition: all .4s ease;
+    margin-top: 1.9rem;
+  }
+
+  .arrow {
+    content: '';
+    width: 2px;
+    height: 30px;
+    background-color: #ffffff;
+  }
+
+.description{
+    margin: auto;
+    opacity: 0;
+    transition: all .25s ease;
+    min-width: 90%;
+    max-width: 6rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.step:hover{
+    width: 60rem;
+}
+
+.step:hover .dolisttitle{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.step:hover .description{
+    opacity: 1;
+}
+
+/*---------------------------------------------TEAM-------------------------------------*/
+
+.norbi{
+    max-width: 37rem;
+    margin: 2rem;
+    border: 1px #5900ff;
+    background-color: #4800ff12;
+    border-style:solid;
+    border-radius: 30px;
+    height: 14rem;
+}
+
+.norbi:hover{
+    border: none;
+    height: 20rem;
+}
+
+.sechead{
+    display: flex;
+    width: 34rem;
+}
+
+.norbi img {
+    height: 10rem;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 1rem;
+}
+
+.norbi p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #e0f7fa;
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+}
+
+.norbi h2 {
+    font-size: 2.5rem;
+    color: #0579af;
+    display: flex;
+    margin: auto;
+}
+
+.norbi:hover h2{
+    opacity: 1;
+}
+
+.norbi:hover img{
+    opacity: 1;
+}
+
+.norbi:hover p{
+    opacity: 1;
+}
+
+.exeption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainr.exeption {
+    margin-left: auto;
+}
+
+#mainl.exeption {
+    margin-right: auto;
+}
+
+.teamdesign{
+    opacity: 1;
+}
+
+.norbi:hover .teamdesign {
+    opacity: 0;
+}
